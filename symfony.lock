@@ -87,6 +87,9 @@
     "egulias/email-validator": {
         "version": "2.1.17"
     },
+    "friendsofphp/proxy-manager-lts": {
+        "version": "v1.0.3"
+    },
     "friendsofsymfony/ckeditor-bundle": {
         "version": "2.0",
         "recipe": {

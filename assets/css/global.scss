@@ -1,5 +1,5 @@
 // customize some Bootstrap variables
-$blue: darken(#006600, 5%);
+$blue: darken(#185DA8, 5%);
 
 // the ~ allows you to reference things in node_modules
 @import "~bootstrap/scss/bootstrap";
@@ -26,21 +26,21 @@ h1 {
 
 h2 {
   font-size: 1.4rem;
-  color: #006600;
+  color: $blue;
   font-weight: normal;
   text-align: center;
-  //    border-bottom: 1.5px solid #006600;
+  //    border-bottom: 1.5px solid $blue;
 }
 
 h6 {
   font-size: 0.75rem;
-  color: #006600;
+  color: $blue;
   font-weight: bold;
 }
 
 label {
   font-weight: normal;
-  color: #006600;
+  color: $blue;
   font-size: 0.9rem;
   margin-bottom: 0;
   margin-left: 0.2rem;
@@ -63,7 +63,7 @@ legend {
 }
 
 .datepicker table tr td {
-  color: #006600;
+  color: $blue;
   font-weight: bold;
 }
 
@@ -137,7 +137,7 @@ legend {
 .footer {
   padding-top: 40px;
   font-size: 0.75rem;
-  color: #006600;
+  color: $blue;
 }
 
 @media print {
@@ -210,7 +210,7 @@ table.dataTable tbody>tr.selected, table.dataTable tbody>tr>.selected {
 
 #dt_processing {
   background-color: #dff2d2;
-  color: #006600;
+  color: $blue;
 }
 
 div.dataTables_wrapper div.dataTables_filter {
@@ -231,7 +231,7 @@ div.dataTables_wrapper div.dataTables_filter {
 // ButtonTop
 #buttonTop {
   display: inline-block;
-  background-color: #006600;
+  background-color: $blue;
   width: 50px;
   height: 35px;
   text-align: center;
