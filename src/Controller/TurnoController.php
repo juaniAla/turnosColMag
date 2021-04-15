@@ -441,7 +441,7 @@ class TurnoController extends AbstractController
                     $email = (new TemplatedEmail())
                         ->from($fromAdrress)
                         ->to($turno->getPersona()->getEmail())
-                        ->subject('Poder Judicial Santa Fe - Confirmación de Turno')
+                        ->subject('Colegio de Magistrados y Funcionarios del Poder Judicial de la Provincia de Santa Fe - Confirmación de Turno')
                         ->htmlTemplate($mailTemplate)
                         ->context([
                             'expiration_date' => new \DateTime('+7 days'),
@@ -900,7 +900,7 @@ class TurnoController extends AbstractController
                         $email = (new TemplatedEmail())
                             ->from($fromAdrress)
                             ->to($turno->getPersona()->getEmail())
-                            ->subject('Poder Judicial Santa Fe - Solicitud de Turno Cancelada')
+                            ->subject('Colegio de Magistrados y Funcionarios del Poder Judicial de la Provincia de Santa Fe - Solicitud de Turno Cancelada')
                             ->htmlTemplate($mailTemplate)
                             ->context([
                                 'expiration_date' => new \DateTime('+7 days'),

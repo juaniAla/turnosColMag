@@ -4,7 +4,7 @@
 
 {% block body %}
     <div class="row mt-3 mb-5">
-        <div class="col-3"><img src="{{asset('images/logo.png')}}" class="rounded float-left" alt="Poder Judicial" height="85"></div>
+        <div class="col-3"><img src="{{asset('images/logo.png')}}" class="rounded float-left" alt="" height="85"></div>
         <div class="col-6">
             <h1>{% trans %}Cancelación de Turno{% endtrans %}</h1>
         </div>
@@ -13,7 +13,7 @@
 
     {% if mensaje %}
         <p class="text-center text-primary">
-            El turno de fecha {{ turno.fechaHora |date('d/m/Y') }} a las {{ turno.fechaHora |date('H:i')}}hs. para {{ turno.oficina.oficina }} - {{ turno.oficina.localidad.localidad }} (Poder Judicial de Santa Fe) ha sido cancelado.
+            El turno de fecha {{ turno.fechaHora |date('d/m/Y') }} a las {{ turno.fechaHora |date('H:i')}}hs. para {{ turno.oficina.oficina }} - {{ turno.oficina.localidad.localidad }} (Colegio de Magistrados y Funcionarios del Poder Judicial de la Provincia de Santa Fe) ha sido cancelado.
         </p>
     {% else %}
         {{ include('turno/_form.html.twig') }}

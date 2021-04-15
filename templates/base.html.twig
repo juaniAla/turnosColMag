@@ -37,7 +37,7 @@
                 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary border border-light text-white shadow" >
                     {% set current_path = app.request.get('_route') %}
                     {% if app.request.get('_route') != 'main' %}
-                            <a class="navbar-brand" href="{{ path('main') }}"><img src="{{asset('images/escudo.png')}}" class="rounded float-left" alt="Poder Judicial" height="35" width="38"></a>
+                            <a class="navbar-brand" href="{{ path('main') }}"><img src="{{asset('images/escudo.png')}}" class="rounded float-left" alt="" height="35" width="38"></a>
                     {% endif %}
                     <button class="navbar-toggler d-lg-none float-left" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -141,7 +141,7 @@
                 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary border border-light text-white" >
                     {% set current_path = app.request.get('_route') %}
                     {% if app.request.get('_route') != 'main' %}
-                            <a class="navbar-brand" href="{{ path('main') }}"><img src="{{asset('images/escudo.png')}}" class="rounded float-left" alt="Poder Judicial" height="35" width="38"></a>
+                            <a class="navbar-brand" href="{{ path('main') }}"><img src="{{asset('images/escudo.png')}}" class="rounded float-left" alt="" height="35" width="38"></a>
                     {% endif %}
                     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                         aria-expanded="false" aria-label="Toggle navigation"></button>
@@ -204,6 +204,7 @@
             </script>
         
         {% endblock %}
+{# Se elimina el footer        
         <footer class="footer text-center">
             <br><br>
             <p>&copy; 2020 <a target="_blank" href="http://www.justiciasantafe.gov.ar/js/index.php"> Poder Judicial de la Provincia de Santa Fe</a> - República Argentina. Todos los derechos reservados.                
@@ -212,5 +213,6 @@
                 {% endif %}               
             </p>
         </footer>
+#}
     </body>
 </html>
