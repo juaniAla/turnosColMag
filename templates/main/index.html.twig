@@ -18,7 +18,7 @@
         </div>
         <div class="col">
             <h1 class="display-4">{% trans %}Solicitud de Turnos{% endtrans %}</h1>
-            <p class="lead text-center">PODER JUDICIAL DE LA PROVINCIA DE SANTA FE</p>
+            <p class="lead text-center">Colegio de Magistrados y Funcionarios del Poder Judicial de Santa Fe</p>
             <hr class="my-4">
             <p>{% trans %}main.parrafo1{% endtrans %}</p>            
             {% if SistemaTurnosWeb %}                
@@ -31,12 +31,6 @@
                         <a class="btn btn-primary btn-lg float-center shadow" href="{{ path('turno_new2') }}" role="button">Solicitar Turno</a>
                     </div>
                 </div>
-                <br>
-                <div class="row mt-5">
-                    <div class="col-12 text-center">
-                        <p>Para solicitar turnos en Defensorías Civiles ingrese aquí: <a class="btn btn-outline-primary btn-sm float-center shadow" href={{ urlIndexMPCivil }} role="button">Solicitar Turno Defensorías Generales Civiles</a> </p>
-                    </div>
-                </div>                
             {% else %}
                 {% if SistemaTurnosMPE %}
                     <div class="row">

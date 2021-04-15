@@ -65,7 +65,9 @@
                                     {% endif %}
                                 </div>
                             </li>
+{#  Se deshabilita Manual de Ayuda
                             <li class="nav-item dropdown">
+                                
                                 <a class="nav-link dropdown-toggle text-light" href="#" id="dropdownAyudaId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ayuda</a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownAyudaId">
                                     {% if SistemaTurnosWeb %}
@@ -79,6 +81,7 @@
                                     {% endif %}
                                 </div>
                             </li>
+#}                            
                             {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_AUDITORIA_GESTION') or (app.user.getOficina().getAutoGestion()) %}
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle text-light" href="#" id="dropdownAdministrarId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrar</a>
